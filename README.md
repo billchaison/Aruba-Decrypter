@@ -28,7 +28,7 @@ Pass the values into an openssl command pipeline to recover the plain text passw
 echo -n ffbec10fbc6b4d6fced5abb72d1173a8 | xxd -r -p | openssl enc -des3 --nosalt -K 327410849117754614758292434904591869159427843003 -iv 8aa786b345cb6fcf -d | hexdump -Cv
 ```
 
-The ouput will look something like this:<br />
+The output will look something like this:<br />
 ```
 00000000    24 65 63 72 65 74 50 40 35 35 77 30 72 64    |$ecretP@55w0rd|
 ```
